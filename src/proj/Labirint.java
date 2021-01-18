@@ -20,7 +20,7 @@ public class Labirint {
 		Cell [][]arr = new Cell[mas*2][mas*2];
 		for(int k = 0; k < arr.length; k++) {
 			for(int z = 0; z < arr[k].length; z++) {		
-				arr[k][z] = new Cell("0");
+				arr[k][z] = new Cell("0");				
 			}
 		}
 		int n = mas;

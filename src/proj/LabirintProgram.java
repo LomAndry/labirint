@@ -13,8 +13,10 @@ public class LabirintProgram {
 	
 	public void run() {
 		try {
-			BufferedReader br = new BufferedReader(new FileReader("D:\\small-test.in.txt"));			
-			BufferedWriter bw = new BufferedWriter(new FileWriter("D:\\small-test.out.txt"));			
+			//BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Home\\Labirint\\small-test.in.txt"));			
+			//BufferedWriter bw = new BufferedWriter(new FileWriter("C:\\Users\\Home\\Labirint\\small-test.out.txt"));
+			BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Home\\Labirint\\large-test.in.txt"));			
+			BufferedWriter bw = new BufferedWriter(new FileWriter("C:\\Users\\Home\\Labirint\\large-test.out.txt"));
 			int ci = Integer.parseInt(br.readLine());
 			for (int i = 0; i < ci; i++) {				
 		    	String[] words = br.readLine().split("\\s");
@@ -33,9 +35,9 @@ public class LabirintProgram {
 	         bw.close();
 		} catch (FileNotFoundException e) {
 			System.out.println("Файл не найден!");			
-		} catch (IOException e) {
-			e.printStackTrace();
-			System.out.println("Готово!");
-		}	
+		} catch (IOException e) {			
+			//e.printStackTrace();
+		}
+		System.out.println("Готово!");
 	}
 }
