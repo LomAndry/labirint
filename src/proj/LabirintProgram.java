@@ -22,16 +22,19 @@ public class LabirintProgram {
 		    	String second = words[1];
 		    	Labirint labir = new Labirint();
 		    	List<String> l = new ArrayList<>();		
-				}	            
-		    			
+		    	l = labir.labirnt(first,second);				
+	            bw.write("Case #"+ (i+1) +":"+ "\n");
+	            for (int j = 0; j < l.size(); j++) {       	
+	            	bw.write(l.get(j) + "\n");
+				}
+	            bw.flush();
+		    }			
 			 br.close();
 	         bw.close();
 		} catch (FileNotFoundException e) {
 			System.out.println("Готово!");			
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
-
+		}	
 	}
-	
 }
